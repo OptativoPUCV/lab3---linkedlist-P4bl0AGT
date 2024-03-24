@@ -379,3 +379,9 @@ list.c:96:26: error: ‘List’ {aka ‘struct List’} has no member named ‘t
       |                          tail
 Compilation failed
 8012dff
+Sun 24 Mar 2024 08:01:11 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  10|2
+total_score: 45/70
+11341c6
