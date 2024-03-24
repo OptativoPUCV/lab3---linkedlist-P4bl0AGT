@@ -314,3 +314,14 @@ list.c:85:9: error: variable ‘actual’ set but not used [-Werror=unused-but-s
 cc1: all warnings being treated as errors
 Compilation failed
 f9c0303
+Sun 24 Mar 2024 07:46:06 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:86:16: error: assignment to ‘void *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   86 |   actual->data = 2;
+      |                ^
+cc1: all warnings being treated as errors
+Compilation failed
+a2207cf
