@@ -325,3 +325,9 @@ list.c:86:16: error: assignment to ‘void *’ from ‘int’ makes pointer fro
 cc1: all warnings being treated as errors
 Compilation failed
 a2207cf
+Sun 24 Mar 2024 07:46:19 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  10|2
+total_score: 45/70
+62b93a0
