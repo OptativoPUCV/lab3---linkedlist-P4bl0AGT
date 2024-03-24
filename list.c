@@ -39,7 +39,6 @@ List * createList() {
 void * firstList(List * list) {
   if(list->head == NULL) return NULL;
   list->current = list->head;
-  printf("%i", *(int *)(list->head->data));
   return list->head->data;
 }
 
@@ -65,7 +64,6 @@ void * prevList(List * list) {
 
 void pushFront(List * list, void * data) {
   Node *actual = createNode(data);
-
   actual->next = list->head;
   list->head = actual;
   
