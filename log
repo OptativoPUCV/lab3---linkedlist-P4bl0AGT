@@ -355,3 +355,16 @@ Sun 24 Mar 2024 07:58:38 PM UTC:
  tests:  10|2
 total_score: 45/70
 471fc88
+Sun 24 Mar 2024 07:59:40 PM UTC: 
+ list.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:96:5: error: too few arguments to function ‘pushBack’
+   96 |     pushBack(data);
+      |     ^~~~~~~~
+list.c:79:6: note: declared here
+   79 | void pushBack(List * list, void * data) {
+      |      ^~~~~~~~
+Compilation failed
+ad8c573
