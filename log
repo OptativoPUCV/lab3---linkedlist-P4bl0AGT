@@ -300,3 +300,17 @@ Sun 24 Mar 2024 07:33:02 PM UTC:
  tests:  10|2
 total_score: 45/70
 b820fde
+Sun 24 Mar 2024 07:45:54 PM UTC: 
+ list.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:86:10: error: assignment to ‘Node *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   86 |   actual = 2;
+      |          ^
+list.c:85:9: error: variable ‘actual’ set but not used [-Werror=unused-but-set-variable]
+   85 |   Node *actual = createNode(data);
+      |         ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+f9c0303
