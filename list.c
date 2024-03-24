@@ -64,10 +64,10 @@ void * prevList(List * list) {
 
 void pushFront(List * list, void * data) {
   Node *actual = createNode(data);
-  Node *sig = firstList(list);
 
-  actual->next = sig;
-  list->head = actual;
+  actual->next = list->tail;
+  list->tail = actual;
+  
   
 }
 
