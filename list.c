@@ -90,8 +90,8 @@ void pushCurrent(List * list, void * data) {
     list->current = actual;
     return;
   }  
-  actual->prev = list->tail;
-  list->tail = actual;
+  
+  actual->prev = list->current;
   list->current = actual;
   
 }
