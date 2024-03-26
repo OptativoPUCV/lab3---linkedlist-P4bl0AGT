@@ -124,13 +124,12 @@ void * popCurrent(List * list) {
     list->tail->next = NULL;
     list->current = list->tail;
   }
-  else
-  {
-    list->current->prev->next = list->current->next;
-    list->current->next->prev = list->current->prev;
-    list->current = list->current->next;
-  }
-  
+
+  Node *anteriorCurrent = list->current->prev;
+  Node *siguienteCurrent = list->current->next;
+  anteriorCurrent = list->current->next;
+  siguienteCurrent = list->current->prev;
+  list->current = list->current->next;
   
   free(actual);
   return dato;

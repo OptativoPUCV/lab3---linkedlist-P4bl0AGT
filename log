@@ -558,3 +558,17 @@ Mon 25 Mar 2024 01:39:35 PM UTC:
  tests:  12|0
 total_score: 70/70
 1e81e95
+Tue 26 Mar 2024 02:38:48 AM UTC: 
+ list.c | 11 +++++------
+ 1 file changed, 5 insertions(+), 6 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:129:9: error: variable ‘siguienteCurrent’ set but not used [-Werror=unused-but-set-variable]
+  129 |   Node *siguienteCurrent = list->current->next;
+      |         ^~~~~~~~~~~~~~~~
+list.c:128:9: error: variable ‘anteriorCurrent’ set but not used [-Werror=unused-but-set-variable]
+  128 |   Node *anteriorCurrent = list->current->prev;
+      |         ^~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+b131901
