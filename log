@@ -600,3 +600,17 @@ list.c:130:11: error: variable ‘anteriorCurrent’ set but not used [-Werror=u
 cc1: all warnings being treated as errors
 Compilation failed
 8be43d7
+Tue 26 Mar 2024 06:12:24 PM UTC: 
+ list.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:132:11: error: variable ‘siguienteCurrent’ set but not used [-Werror=unused-but-set-variable]
+  132 |     Node *siguienteCurrent = list->current->next;
+      |           ^~~~~~~~~~~~~~~~
+list.c:131:11: error: variable ‘anteriorCurrent’ set but not used [-Werror=unused-but-set-variable]
+  131 |     Node *anteriorCurrent = list->current->prev;
+      |           ^~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+abf3aba

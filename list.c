@@ -85,9 +85,10 @@ void pushCurrent(List * list, void * data) {
   
   if(list->current == list->head)
   {
-    actual->prev = list->current;
+    pushFront(list, data);
+    /*actual->prev = list->current;
     actual->next = nextList(list);
-    list->head->next = actual;
+    list->head->next = actual;*/
   }
 
   if(list->current == list->tail)
